@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon.ico?v=2"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ankit Saxena</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="h-nav">
+      <div class="logo">Ankit</div>
+      <div class="h-menu">
+        <div class="h-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="togglemenu()">About</a></li>
+          <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+          <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+          <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="/assets/download.jpg" alt="Ankit" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <p class="title">Ankit</p>
+        <p class="section__text__p2">Full-Stack Developer</p>
+        <div class="button-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/assets/ankit.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me
+          </button>
+        </div>
+        <!--<div id="socials-container">
+          <img
+            class="icon"
+            src="./assets/linkedin.png"
+            alt="linkedin"
+            onclick="location.href='https://www.linkedin.com/in/ankitvsaxena/"
+          />
+          <img
+            class="icon"
+            src="./assets/github-sign.png"
+            alt="github"
+            onclick="location.href='https://github.com/ankush-web-eng'"
+          />
+          <img
+            class="icon"
+            src="./assets/instagram.png"
+            alt="Instagram"
+            onclick="location.href='https://www.instagram.com/ankush__57s/'"
+          />
+        </div>-->
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <video class="about-pic" controls poster="./assets/IMG_4613.PNG">
+            <source src="./assets/IMG_4564.MP4" type="video/MP4" />
+          </video>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/medal.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6+ Months <br />Full-Stack Developent</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/graduation.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>MCA  <br />1st year Student</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a full stack developer with a passion for creating beautiful
+              and functional web applications. I have experience working with
+              React, Next.js, Node.js, Express, MongoDB, and Firebase. I am
+              always looking to learn new technologies and improve my skills. I
+              am currently working as a freelance developer and am open to new
+              opportunities. If you have a project you would like to discuss, or
+              just want to say hi, feel free to contact me at
+              ankitsaxena.com8057@gmail.com
+            </p>
+            <!--<p>
+              Visit <a href="https://ankushsingh.tech">ankushsingh.tech</a>for
+              professional Work.
+            </p>-->
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        onclick="location.href='./#experience'"
+        class="icon arrow"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>Shadcn-UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>NodeJS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>ExpressJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>NextJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Checked Sign"
+                  class="icon"
+                />
+                <div>
+                  <h3>Socket-io</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        onclick="location.href='./#projects'"
+        class="icon arrow"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                alt="Project 1"
+                src="./assets/Xamarin Forms Coaching Masterclass.jpg"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chat-Application</h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ankush-web-eng/chat-app'"
+              >
+                GitHub
+              </button>
+              <button class="btn btn-color-2 project-btn project-btn-2">
+                Discription
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                alt="Project 1"
+                src="./assets/Mental Health Application.jpg"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blog-Application</h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ankush-web-eng/blog-app'"
+              >
+                GitHub
+              </button>
+              <button class="btn btn-color-2 project-btn project-btn-2">
+                Discription
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                alt="Project 1"
+                src="./assets/E-Commerce Mobile App Development Company In India.jpg"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E-commerce</h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ankush-web-eng/e-commerce'"
+              >
+                GitHub
+              </button>
+              <button class="btn btn-color-2 project-btn project-btn-2">
+                Discription
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        onclick="location.href='./#contact'"
+        class="icon arrow"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a target="_blank" href="mailto:ankitsaxena.com8057@gmail.com"
+              >ankitsaxena.com8057@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ankitvsaxena/"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li class="yuphe"><a href="#about">About</a></li>
+            <li class="hidhh"><a href="#experience">Experience</a></li>
+            <li class="hidhh"><a href="#projects">Projects</a></li>
+            <li class="hidhh"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; Ankit Saxena</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
